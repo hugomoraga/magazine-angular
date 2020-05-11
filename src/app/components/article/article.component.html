@@ -1,0 +1,24 @@
+<h1 class="animated fadeIn">{{ article.name | uppercase }} <small>({{article.date | date:"my"}})</small></h1>
+<hr>
+<div class="row animated fadeIn fast">
+    <div class="col-md-4">
+        <img [src]="article.img" class="img-fluid" alt="article.name">
+        <br><br>
+        <a [routerLink]="['/articles']" class="btn btn-outline-info btn-block">Regresar</a>
+    </div>
+
+    <div class="col-md-8">
+        <h3>{{article.name}}</h3>
+        <hr>
+        <p> {{article.paragraph}}
+
+        </p>
+        <div>
+            <img *ngIf="article.category == 'Art'" class="img-logo" src="assets/img/art.png">
+            <img *ngIf="article.category != 'Art'" class="img-logo" src="assets/img/general.png">
+
+        </div>
+
+    </div>
+
+</div>
