@@ -16,6 +16,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ArticleComponent } from './components/article/article.component';
 import { AboutComponent } from './components/about/about.component';
 import { ArticleCardComponent } from './components/article-card/article-card.component';
+import { ArticleFormComponent } from './components/articles/article-form/article-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ArticleCardComponent } from './components/article-card/article-card.com
     NavbarComponent,
     ArticleComponent,
     AboutComponent,
-    ArticleCardComponent
+    ArticleCardComponent,
+    ArticleFormComponent
   ],
   imports: [
     BrowserModule,
